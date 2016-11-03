@@ -13,6 +13,8 @@ import UserNotifications
   static var enabled: Bool = true
   static var notifyTimer: NSTimer!
   static var toNotify: [String] = []
+  @available(iOS 10.0, *)
+  static let ios10Not: ios10NotificationsHelper = ios10NotificationsHelper()
   
   @objc class func register() {
     let notificationsSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge], categories: nil)
@@ -41,12 +43,14 @@ import UserNotifications
   }
   
   class func showNotification(msg: String) {
-    UIApplication.sharedApplication().cancelAllLocalNotifications()
-    // Clean any badge
-    UIApplication.sharedApplication().applicationIconBadgeNumber = 0
-    let notification = UILocalNotification()
-    notification.alertBody = msg
-    UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+    clearNotifications()
+    if #available(iOS 10.0, *) {
+      ios10Not.showRichNotification(toNotify)
+    } else {
+      let notification = UILocalNotification()
+      notification.alertBody = msg
+      UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+    }
   }
   
   // Throttles the notification process, waiting for 10 seconds until
@@ -85,6 +89,9 @@ import UserNotifications
   }
   
   @objc class func enable() {
+    if #available(iOS 10.0, *) {
+      ios10Not.showRichNotification(toNotify)
+    }
     enabled = true
   }
   
