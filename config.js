@@ -26,6 +26,13 @@ module.exports = {
       title: 'Telemetry',
       description: 'Share performance and usage data with Mozilla to help us to improve Project Magnet',
     },
+
+    'useRegions': {
+      value: false,
+      title: 'Use regions',
+      description: 'Use region location to detect when user changes location',
+      platform: 'ios'
+    }
   },
 
   'settings': {

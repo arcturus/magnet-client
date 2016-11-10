@@ -38,11 +38,21 @@ class History {
   }
   
   func getRecent(url: String) -> HistoryRecord! {
-    let earlyDate = NSCalendar.currentCalendar().dateByAddingUnit(
-      .Day,
-      value: -1,
-      toDate: NSDate(),
-      options: [])
+    var earlyDate: NSDate?
+    #if DEBUG
+      earlyDate = NSCalendar.currentCalendar().dateByAddingUnit(
+        .Minute,
+        value: -1,
+        toDate: NSDate(),
+        options: [])
+    #else
+      earlyDate = NSCalendar.currentCalendar().dateByAddingUnit(
+        .Day,
+        value: -1,
+        toDate: NSDate(),
+        options: [])
+    #endif
+    
     return db.getSince(url, sinceDate: earlyDate!)
   }
   

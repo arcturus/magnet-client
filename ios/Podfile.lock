@@ -1,0 +1,12 @@
+PODS:
+  - BugfenderSDK (0.3.18)
+
+DEPENDENCIES:
+  - BugfenderSDK (~> 0.3)
+
+SPEC CHECKSUMS:
+  BugfenderSDK: c1b9972614c199d079a67aa0733fd55d0be25f30
+
+PODFILE CHECKSUM: 912a508adeab2b65fd733e13579fafca6ff98c2b
+
+COCOAPODS: 1.0.1

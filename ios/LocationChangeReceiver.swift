@@ -11,6 +11,7 @@ import CoreLocation
 @objc(LocationChangeReceiver) class LocationChangeReceiver: NSObject, CLLocationManagerDelegate {
   let locationManager:CLLocationManager = CLLocationManager()
   var scanner: MagnetScanner! = nil
+  var oneShot: OneShotLocation?
   
   @objc override init() {
     super.init()
@@ -18,6 +19,7 @@ import CoreLocation
   }
   
   private func onItemFound(item: Dictionary<String, AnyObject>) {
+    Log.l("Item found while in background \(item)")
     let url = item["url"] as! String
     var channel: String? = nil
     if item["channel_id"] != nil {
@@ -41,7 +43,7 @@ import CoreLocation
     guard UIApplication.sharedApplication().applicationState == UIApplicationState.Background else {
       return;
     }
-    
+    Log.l("Starting logging in the background")
     scanner!.start()
   }
 }

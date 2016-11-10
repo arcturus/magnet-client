@@ -22,11 +22,15 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		222D76421DD3AE4600E15D62 /* ApiPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D76411DD3AE4600E15D62 /* ApiPreferences.swift */; };
+		4DD65D253689E6D46A89FACA /* Pods_Magnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF0A529E1C327A39FAFC4C2 /* Pods_Magnet.framework */; };
 		55055CA81DCBA5A300EC736F /* ApiMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55055CA71DCBA5A300EC736F /* ApiMetadata.swift */; };
 		55055CDD1DCCBBBB00EC736F /* NotificationsHelperIOS10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55055CDC1DCCBBBB00EC736F /* NotificationsHelperIOS10.swift */; };
 		550CECBF1D3536F80076D807 /* NotificationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CECBE1D3536F80076D807 /* NotificationsHelper.swift */; };
 		552134411DCA30E600A562AC /* ApiSubscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552134401DCA30E600A562AC /* ApiSubscriptions.swift */; };
 		553647D81DBE206000ADFBB3 /* LocationChangeReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553647D71DBE206000ADFBB3 /* LocationChangeReceiver.swift */; };
+		553680C31DD227D7007919CE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553680C21DD227D7007919CE /* Log.swift */; };
+		553680D21DD38BAB007919CE /* RegionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553680D11DD38BAB007919CE /* RegionManager.swift */; };
+		553680D41DD38C71007919CE /* OneShotLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553680D31DD38C71007919CE /* OneShotLocation.swift */; };
 		5583EF0E1D3D55AD00852649 /* HistoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583EF0D1D3D55AD00852649 /* HistoryRecord.swift */; };
 		5583EF101D3D565200852649 /* HistorySQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583EF0F1D3D565200852649 /* HistorySQLite.swift */; };
 		5583EF121D3E36C300852649 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583EF111D3E36C300852649 /* History.swift */; };
@@ -43,6 +47,7 @@
 		55C013F91DC8FB7C00154F76 /* ApiMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C013F81DC8FB7C00154F76 /* ApiMagnet.swift */; };
 		55C013FD1DC8FFC600154F76 /* ApiMagnetReact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C013FC1DC8FFC600154F76 /* ApiMagnetReact.swift */; };
 		55C013FF1DC9037D00154F76 /* ApiMagnetReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C013FE1DC9037D00154F76 /* ApiMagnetReact.m */; };
+		771F2782CBD75FB3E431434A /* Pods_MagnetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D46BE6F8507EE79F209E77 /* Pods_MagnetTests.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		85767A351D6339BD009F400A /* MagnetScannerIOS.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 85DF9A331D633665004DF3F1 /* MagnetScannerIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85DF9A341D633665004DF3F1 /* MagnetScannerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF9A331D633665004DF3F1 /* MagnetScannerIOS.framework */; };
@@ -201,11 +206,15 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Magnet/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		222D76411DD3AE4600E15D62 /* ApiPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPreferences.swift; sourceTree = "<group>"; };
+		352AC28592D29314D0C1481A /* Pods-MagnetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagnetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagnetTests/Pods-MagnetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		55055CA71DCBA5A300EC736F /* ApiMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMetadata.swift; sourceTree = "<group>"; };
 		55055CDC1DCCBBBB00EC736F /* NotificationsHelperIOS10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsHelperIOS10.swift; sourceTree = "<group>"; };
 		550CECBE1D3536F80076D807 /* NotificationsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsHelper.swift; sourceTree = "<group>"; };
 		552134401DCA30E600A562AC /* ApiSubscriptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiSubscriptions.swift; sourceTree = "<group>"; };
 		553647D71DBE206000ADFBB3 /* LocationChangeReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationChangeReceiver.swift; sourceTree = "<group>"; };
+		553680C21DD227D7007919CE /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		553680D11DD38BAB007919CE /* RegionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionManager.swift; sourceTree = "<group>"; };
+		553680D31DD38C71007919CE /* OneShotLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneShotLocation.swift; sourceTree = "<group>"; };
 		555800951CBE5F7800A21868 /* Magnet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magnet-Bridging-Header.h"; sourceTree = "<group>"; };
 		5583EF0D1D3D55AD00852649 /* HistoryRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRecord.swift; sourceTree = "<group>"; };
 		5583EF0F1D3D565200852649 /* HistorySQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySQLite.swift; sourceTree = "<group>"; };
@@ -221,7 +230,9 @@
 		55C013F81DC8FB7C00154F76 /* ApiMagnet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMagnet.swift; sourceTree = "<group>"; };
 		55C013FC1DC8FFC600154F76 /* ApiMagnetReact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMagnetReact.swift; sourceTree = "<group>"; };
 		55C013FE1DC9037D00154F76 /* ApiMagnetReact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiMagnetReact.m; sourceTree = "<group>"; };
+		56C3218838FBC37F94731D42 /* Pods-Magnet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magnet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Magnet/Pods-Magnet.debug.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7CF0A529E1C327A39FAFC4C2 /* Pods_Magnet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Magnet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		85DF9A331D633665004DF3F1 /* MagnetScannerIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MagnetScannerIOS.framework; path = Carthage/Build/iOS/MagnetScannerIOS.framework; sourceTree = "<group>"; };
 		8D5722461CDCB16400480505 /* RNMagnetWebViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMagnetWebViewManager.swift; sourceTree = "<group>"; };
@@ -245,6 +256,9 @@
 		8DF8217C1D5388090081F56E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8DF8217E1D5388190081F56E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		8DF821831D53B3830081F56E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9594ACE8F7AA03A67F7010E0 /* Pods-MagnetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagnetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagnetTests/Pods-MagnetTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9EA52E24B77794470842DFB /* Pods-Magnet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magnet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Magnet/Pods-Magnet.release.xcconfig"; sourceTree = "<group>"; };
+		E0D46BE6F8507EE79F209E77 /* Pods_MagnetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagnetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771F2782CBD75FB3E431434A /* Pods_MagnetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +295,7 @@
 				559608C81DB918B100816CF1 /* Alamofire.framework in Frameworks */,
 				559608C91DB918B100816CF1 /* SwiftyJSON.framework in Frameworks */,
 				AA85BDA14B4C4D9A8524DCAD /* libBVLinearGradient.a in Frameworks */,
+				4DD65D253689E6D46A89FACA /* Pods_Magnet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +378,7 @@
 		13B07FAE1A68108700A75B9A /* Magnet */ = {
 			isa = PBXGroup;
 			children = (
+				553680D01DD38B05007919CE /* Location */,
 				55055CB51DCC9F3E00EC736F /* Notifications */,
 				55C013F51DC8EC5900154F76 /* Utils */,
 				55C013DD1DC8CBEE00154F76 /* Api */,
@@ -377,7 +394,6 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				555800951CBE5F7800A21868 /* Magnet-Bridging-Header.h */,
-				553647D71DBE206000ADFBB3 /* LocationChangeReceiver.swift */,
 			);
 			name = Magnet;
 			sourceTree = "<group>";
@@ -390,6 +406,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3408924EE21E827A5B30326C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56C3218838FBC37F94731D42 /* Pods-Magnet.debug.xcconfig */,
+				D9EA52E24B77794470842DFB /* Pods-Magnet.release.xcconfig */,
+				352AC28592D29314D0C1481A /* Pods-MagnetTests.debug.xcconfig */,
+				9594ACE8F7AA03A67F7010E0 /* Pods-MagnetTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		55055CB51DCC9F3E00EC736F /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +424,16 @@
 				55055CDC1DCCBBBB00EC736F /* NotificationsHelperIOS10.swift */,
 			);
 			name = Notifications;
+			sourceTree = "<group>";
+		};
+		553680D01DD38B05007919CE /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				553647D71DBE206000ADFBB3 /* LocationChangeReceiver.swift */,
+				553680D11DD38BAB007919CE /* RegionManager.swift */,
+				553680D31DD38C71007919CE /* OneShotLocation.swift */,
+			);
+			name = Location;
 			sourceTree = "<group>";
 		};
 		5583EF0A1D3D519D00852649 /* History */ = {
@@ -414,6 +451,8 @@
 			children = (
 				559608C61DB918B100816CF1 /* Alamofire.framework */,
 				559608C71DB918B100816CF1 /* SwiftyJSON.framework */,
+				7CF0A529E1C327A39FAFC4C2 /* Pods_Magnet.framework */,
+				E0D46BE6F8507EE79F209E77 /* Pods_MagnetTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -447,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				55C013F61DC8EC6800154F76 /* System.swift */,
+				553680C21DD227D7007919CE /* Log.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -502,6 +542,7 @@
 				00E356EF1AD99517003FC87E /* MagnetTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				559608B91DB918B100816CF1 /* Frameworks */,
+				3408924EE21E827A5B30326C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -581,9 +622,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MagnetTests" */;
 			buildPhases = (
+				36A89B60ACC54078ADAE72A9 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				4BCD59C13EB858731D5716A9 /* [CP] Embed Pods Frameworks */,
+				7407EEA8E8E2CCD6904969D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -599,6 +643,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Magnet" */;
 			buildPhases = (
+				83F5322AAE0CE4894FF277B9 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
@@ -606,6 +651,8 @@
 				5583EF141D3E46FC00852649 /* ShellScript */,
 				85DF9A271D632FED004DF3F1 /* Copy Files */,
 				55AE10ED1D67664900CAD0E0 /* ShellScript */,
+				29593A4E57BBDE22CA831BE8 /* [CP] Embed Pods Frameworks */,
+				AF103D2B25CFC1D4CE8BF073 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -827,6 +874,51 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
+		29593A4E57BBDE22CA831BE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Magnet/Pods-Magnet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36A89B60ACC54078ADAE72A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4BCD59C13EB858731D5716A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagnetTests/Pods-MagnetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5583EF141D3E46FC00852649 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -854,6 +946,51 @@
 			shellPath = /bin/sh;
 			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
 		};
+		7407EEA8E8E2CCD6904969D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagnetTests/Pods-MagnetTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83F5322AAE0CE4894FF277B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF103D2B25CFC1D4CE8BF073 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Magnet/Pods-Magnet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -871,11 +1008,14 @@
 			files = (
 				5583EF101D3D565200852649 /* HistorySQLite.swift in Sources */,
 				552134411DCA30E600A562AC /* ApiSubscriptions.swift in Sources */,
+				553680C31DD227D7007919CE /* Log.swift in Sources */,
 				55C013FD1DC8FFC600154F76 /* ApiMagnetReact.swift in Sources */,
+				553680D21DD38BAB007919CE /* RegionManager.swift in Sources */,
 				8D57224A1CDCB16400480505 /* RNMagnetWebViewManagerExport.m in Sources */,
 				55C013EB1DC8CC2600154F76 /* RequestStore.swift in Sources */,
 				55C013EE1DC8CE9100154F76 /* RequestStoreSQLite.swift in Sources */,
 				5583EF0E1D3D55AD00852649 /* HistoryRecord.swift in Sources */,
+				553680D41DD38C71007919CE /* OneShotLocation.swift in Sources */,
 				8D589BE31DC0E1700069BB98 /* SubscriptionRecord.swift in Sources */,
 				8D589BF11DC0E6660069BB98 /* SubscriptionsReact.m in Sources */,
 				550CECBF1D3536F80076D807 /* NotificationsHelper.swift in Sources */,
@@ -927,6 +1067,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352AC28592D29314D0C1481A /* Pods-MagnetTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -943,6 +1084,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9594ACE8F7AA03A67F7010E0 /* Pods-MagnetTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -956,6 +1098,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C3218838FBC37F94731D42 /* Pods-Magnet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -979,7 +1122,10 @@
 				OTHER_LDFLAGS = (
 					"-lc++",
 					"-ObjC",
+					"$(inherited)",
 				);
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = org.mozilla.ios.Magnet;
 				PRODUCT_NAME = Magnet;
 				PROVISIONING_PROFILE = "";
@@ -991,6 +1137,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EA52E24B77794470842DFB /* Pods-Magnet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -1013,7 +1160,9 @@
 				OTHER_LDFLAGS = (
 					"-lc++",
 					"-ObjC",
+					"$(inherited)",
 				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = org.mozilla.ios.Magnet;
 				PRODUCT_NAME = Magnet;
 				PROVISIONING_PROFILE = "";
@@ -1067,6 +1216,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 2.3;
 			};
@@ -1108,6 +1259,8 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;

@@ -38,8 +38,9 @@ class NotificationsHelperIOS10: NSObject, UNUserNotificationCenterDelegate {
               subtitle: "by \(channel)",
               body: json[0]["description"].string!,
               url: url)
+        Log.l("Dispatching rich notification for \(json.rawString())")
       } catch {
-        debugPrint("Could not launh notification for \(url) : \(channel)")
+        Log.w("Could not launh notification for \(url) : \(channel)")
       }
     })
   }
@@ -68,7 +69,9 @@ class NotificationsHelperIOS10: NSObject, UNUserNotificationCenterDelegate {
     let category = UNNotificationCategory(identifier: NotificationsHelperIOS10.CATEGORY, actions: [action], intentIdentifiers: [], options: [])
     UNUserNotificationCenter.currentNotificationCenter().setNotificationCategories([category])
     
-    let request = UNNotificationRequest(identifier: url, content: content, trigger: nil)
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+    
+    let request = UNNotificationRequest(identifier: url, content: content, trigger: trigger)
     UNUserNotificationCenter.currentNotificationCenter().addNotificationRequest(request, withCompletionHandler: nil)
   }
   

@@ -22,7 +22,7 @@
   NSURL *jsCodeLocation;
 
   // Load from the server
-  //jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+  // jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
   // Load from local bundle
   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
@@ -46,21 +46,26 @@
   // Listen to location changes, will be stopped when we go to foreground and reactivated
   // when we go to background
   self.locationReceiver = [[LocationChangeReceiver alloc] init];
-  [self.locationReceiver startSignificantLocationChanges];
-
+  //[self.locationReceiver startSignificantLocationChanges];
+  self.regionManager = [[RegionManager alloc] init];
+  
+  [Bugfender enableAllWithToken:@"IX8dDZG5HD2xplc8DW3IpKhTFz0Wsyn1"];  
+  
   return YES;
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
   [NotificationsHelper clearNotifications];
   [NotificationsHelper disable];
-  [self.locationReceiver stopSignificantLocationChanges];
+  //[self.locationReceiver stopSignificantLocationChanges];
+  [self.regionManager stopListeningToRegionChange];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
   [NotificationsHelper clearNotifications];
   [NotificationsHelper enable];
-  [self.locationReceiver startSignificantLocationChanges];
+  //[self.locationReceiver startSignificantLocationChanges];
+  [self.regionManager startListeningToRegionChange];
 }
 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
