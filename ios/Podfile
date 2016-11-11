@@ -6,7 +6,7 @@ target 'Magnet' do
   use_frameworks!
 
   # Pods for Magnet
-  pod 'BugfenderSDK', '~> 0.3'
+  pod 'BugfenderSDK', '~> 0.3.24'
 
   target 'MagnetTests' do
     inherit! :search_paths
